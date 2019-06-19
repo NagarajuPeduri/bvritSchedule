@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.bvrit.bvritschedule">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.STORAGE" />
+
+    <application
+        android:name=".contextClass"
+        android:allowBackup="true"
+        android:icon="@mipmap/mainicon_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".fullscreen"></activity>
+        <activity android:name=".admin_faculty_details" />
+        <activity android:name=".guestClassDepartment" />
+        <activity android:name=".guestFirstYearSections" />
+        <activity android:name=".guestDepartmentYear" />
+        <activity android:name=".guestClassBmeSections" />
+        <activity android:name=".guestClassChemSections" />
+        <activity android:name=".guestClassMechSections" />
+        <activity android:name=".guestClassItSections" />
+        <activity android:name=".guestClassEceSections" />
+        <activity android:name=".guestClassEeeSections" />
+        <activity android:name=".guestClassCsesections" />
+        <activity android:name=".guestClassDetails" />
+        <activity android:name=".classBmeSections" />
+        <activity android:name=".classChemSections" />
+        <activity android:name=".classMechSections" />
+        <activity android:name=".classItSections" />
+        <activity android:name=".classEceSections" />
+        <activity android:name=".classEeeSections" />
+        <activity android:name=".classCseSections" />
+        <activity android:name=".editClassDetails" />
+        <activity android:name=".classDetails" />
+        <activity android:name=".guestViewingFaculty" />
+        <activity android:name=".firstYearSections" />
+        <activity android:name=".departmentYear" />
+        <activity android:name=".guestFacutlyDepartment" />
+        <activity android:name=".guestLayout" />
+        <activity android:name=".adminLogin" />
+        <activity android:name=".afterAdminLogin" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".welcomeScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".facultyDepartment" />
+        <activity android:name=".classDepartment" />
+        <activity android:name=".facultyDetails" />
+        <activity android:name=".ViewingFacutly" />
+        <activity android:name=".addingFacutly" />
+    </application>
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+
+</manifest>

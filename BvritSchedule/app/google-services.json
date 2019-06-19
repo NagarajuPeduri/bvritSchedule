@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "403083392557",
+    "firebase_url": "https://bvrit-schedule.firebaseio.com",
+    "project_id": "bvrit-schedule",
+    "storage_bucket": "bvrit-schedule.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:403083392557:android:2fcf6026b34434ba",
+        "android_client_info": {
+          "package_name": "org.bvrit.bvritschedule"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "403083392557-nijml751c10eolqcckb5ugd86cbpl8b1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.bvrit.bvritschedule",
+            "certificate_hash": "009ac61399d2883a00980fae4a6e6f215b8ffbe6"
+          }
+        },
+        {
+          "client_id": "403083392557-u42mb7v99fqoda9fblj8m5ib0jsocsqh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDb4kycalC2i0W4oLA2w1bCcnt8CIMxkho"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "403083392557-u42mb7v99fqoda9fblj8m5ib0jsocsqh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

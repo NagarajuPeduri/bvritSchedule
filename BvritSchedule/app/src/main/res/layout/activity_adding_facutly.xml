@@ -1,0 +1,3017 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addingFacutly"
+    android:background="@color/mycolor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter details"
+        android:textColor="#ffffff"
+        android:textSize="23sp"
+        android:textAlignment="center"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:weightSum="4"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Name : "
+            android:layout_weight="1"
+            android:textColor="#ffffff"/>
+
+       <EditText
+           android:id="@+id/name"
+           android:textColor="#ffffff"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="3"
+           android:background="@drawable/shape"
+           android:hint="Enter name"
+           android:padding="7dp"
+           android:textColorHint="#ffffff"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:weightSum="4"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Email : "
+            android:layout_weight="1"
+            android:textColor="#ffffff"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:textColor="#ffffff"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/shape"
+            android:hint="Enter email"
+            android:padding="7dp"
+            android:textColorHint="#ffffff"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:weightSum="4"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Number : "
+            android:layout_weight="1"
+            android:textColor="#ffffff"/>
+
+        <EditText
+            android:id="@+id/number"
+            android:textColor="#ffffff"
+            android:inputType="number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/shape"
+            android:hint="Enter email"
+            android:padding="7dp"
+            android:textColorHint="#ffffff"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:textColor="#ffffff"
+        android:text="Timetable"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monday"
+        android:textSize="22sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:text="Period 1 : "/>
+
+            <RadioGroup
+                android:id="@+id/monday_period1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="2">
+
+                <RadioButton
+                    android:id="@+id/monday_period1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="have class"
+                    android:textSize="16dp"
+                    android:buttonTint="#ffffff"
+                    android:textColor="#ffffff"/>
+
+                <RadioButton
+                    android:id="@+id/monday_period1_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:padding="2dp"
+                    android:text="No class"
+                    android:buttonTint="#ffffff"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ok1"
+            android:layout_width="50sp"
+            android:layout_height="30sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="115dp"
+            android:text="Ok"
+            android:background="@drawable/rounded_button"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:text="Period 2 : "/>
+
+            <RadioGroup
+                android:id="@+id/monday_period2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="2">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="have class"
+                    android:textSize="16dp"
+                    android:buttonTint="#ffffff"
+                    android:textColor="#ffffff"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:padding="2dp"
+                    android:text="No class"
+                    android:buttonTint="#ffffff"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ok2"
+            android:layout_width="50sp"
+            android:layout_height="30sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="115dp"
+            android:text="Ok"
+            android:background="@drawable/rounded_button"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Period 3 : "/>
+
+                <RadioGroup
+                    android:id="@+id/monday_period3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="have class"
+                        android:textSize="16dp"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="2dp"
+                        android:text="No class"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok3"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="115dp"
+                android:text="Ok"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Period 4 : "/>
+
+                <RadioGroup
+                    android:id="@+id/monday_period4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="have class"
+                        android:textSize="16dp"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="2dp"
+                        android:text="No class"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok4"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="115dp"
+                android:text="Ok"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Period 5 : "/>
+
+                <RadioGroup
+                    android:id="@+id/monday_period5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="have class"
+                        android:textSize="16dp"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="2dp"
+                        android:text="No class"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok5"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="115dp"
+                android:text="Ok"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Period 6 : "/>
+
+                <RadioGroup
+                    android:id="@+id/monday_period6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="have class"
+                        android:textSize="16dp"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="2dp"
+                        android:text="No class"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok6"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="115dp"
+                android:text="Ok"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Period 7 : "/>
+
+                <RadioGroup
+                    android:id="@+id/monday_period7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="have class"
+                        android:textSize="16dp"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="2dp"
+                        android:text="No class"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok7"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="115dp"
+                android:text="Ok"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Tuesday"
+            android:textSize="22sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Period 1 : "/>
+
+                <RadioGroup
+                    android:id="@+id/tuesday_period1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="have class"
+                        android:textSize="16dp"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="2dp"
+                        android:text="No class"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok8"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="115dp"
+                android:text="Ok"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Period 2 : "/>
+
+                <RadioGroup
+                    android:id="@+id/tuesday_period2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="have class"
+                        android:textSize="16dp"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="2dp"
+                        android:text="No class"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok9"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="115dp"
+                android:text="Ok"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Period 3 : "/>
+
+                <RadioGroup
+                    android:id="@+id/tuesday_period3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="have class"
+                        android:textSize="16dp"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="2dp"
+                        android:text="No class"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok10"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="115dp"
+                android:text="Ok"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Period 4 : "/>
+
+                <RadioGroup
+                    android:id="@+id/tuesday_period4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="have class"
+                        android:textSize="16dp"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="2dp"
+                        android:text="No class"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok11"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="115dp"
+                android:text="Ok"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Period 5 : "/>
+
+                <RadioGroup
+                    android:id="@+id/tuesday_period5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="have class"
+                        android:textSize="16dp"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="2dp"
+                        android:text="No class"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok12"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="115dp"
+                android:text="Ok"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Period 6 : "/>
+
+                <RadioGroup
+                    android:id="@+id/tuesday_period6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="have class"
+                        android:textSize="16dp"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="2dp"
+                        android:text="No class"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok13"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="115dp"
+                android:text="Ok"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Period 7 : "/>
+
+                <RadioGroup
+                    android:id="@+id/tuesday_period7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="have class"
+                        android:textSize="16dp"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="2dp"
+                        android:text="No class"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok14"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="115dp"
+                android:text="Ok"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Wednesday"
+            android:textSize="22sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Period 1 : "/>
+
+                <RadioGroup
+                    android:id="@+id/wednesday_period1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="have class"
+                        android:textSize="16dp"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="2dp"
+                        android:text="No class"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok15"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="115dp"
+                android:text="Ok"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Period 2 : "/>
+
+                <RadioGroup
+                    android:id="@+id/wednesday_period2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="have class"
+                        android:textSize="16dp"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="2dp"
+                        android:text="No class"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok16"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="115dp"
+                android:text="Ok"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Period 3 : "/>
+
+                <RadioGroup
+                    android:id="@+id/wednesday_period3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="have class"
+                        android:textSize="16dp"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="2dp"
+                        android:text="No class"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok17"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="115dp"
+                android:text="Ok"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Period 4 : "/>
+
+                <RadioGroup
+                    android:id="@+id/wednesday_period4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="have class"
+                        android:textSize="16dp"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="2dp"
+                        android:text="No class"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok18"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="115dp"
+                android:text="Ok"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Period 5 : "/>
+
+                <RadioGroup
+                    android:id="@+id/wednesday_period5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="have class"
+                        android:textSize="16dp"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="2dp"
+                        android:text="No class"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok19"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="115dp"
+                android:text="Ok"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Period 6 : "/>
+
+                <RadioGroup
+                    android:id="@+id/wednesday_period6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="have class"
+                        android:textSize="16dp"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="2dp"
+                        android:text="No class"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok20"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="115dp"
+                android:text="Ok"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Period 7 : "/>
+
+                <RadioGroup
+                    android:id="@+id/wednesday_period7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="have class"
+                        android:textSize="16dp"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="2dp"
+                        android:text="No class"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok21"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="115dp"
+                android:text="Ok"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Thursday"
+            android:textSize="22sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Period 1 : "/>
+
+                <RadioGroup
+                    android:id="@+id/thursday_period1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="have class"
+                        android:textSize="16dp"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="2dp"
+                        android:text="No class"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok22"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="115dp"
+                android:text="Ok"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Period 2 : "/>
+
+                <RadioGroup
+                    android:id="@+id/thursday_period2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="have class"
+                        android:textSize="16dp"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="2dp"
+                        android:text="No class"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok23"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="115dp"
+                android:text="Ok"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Period 3 : "/>
+
+                <RadioGroup
+                    android:id="@+id/thursday_period3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="have class"
+                        android:textSize="16dp"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="2dp"
+                        android:text="No class"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok24"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="115dp"
+                android:text="Ok"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Period 4 : "/>
+
+                <RadioGroup
+                    android:id="@+id/thursday_period4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="have class"
+                        android:textSize="16dp"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="2dp"
+                        android:text="No class"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok25"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="115dp"
+                android:text="Ok"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Period 5 : "/>
+
+                <RadioGroup
+                    android:id="@+id/thursday_period5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="have class"
+                        android:textSize="16dp"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="2dp"
+                        android:text="No class"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok26"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="115dp"
+                android:text="Ok"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Period 6 : "/>
+
+                <RadioGroup
+                    android:id="@+id/thursday_period6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="have class"
+                        android:textSize="16dp"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="2dp"
+                        android:text="No class"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok27"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="115dp"
+                android:text="Ok"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Period 7 : "/>
+
+                <RadioGroup
+                    android:id="@+id/thursday_period7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="have class"
+                        android:textSize="16dp"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="2dp"
+                        android:text="No class"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok28"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="115dp"
+                android:text="Ok"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Friday"
+            android:textSize="22sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Period 1 : "/>
+
+                <RadioGroup
+                    android:id="@+id/friday_period1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="have class"
+                        android:textSize="16dp"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="2dp"
+                        android:text="No class"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok29"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="115dp"
+                android:text="Ok"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Period 2 : "/>
+
+                <RadioGroup
+                    android:id="@+id/friday_period2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="have class"
+                        android:textSize="16dp"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="2dp"
+                        android:text="No class"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok30"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="115dp"
+                android:text="Ok"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Period 3 : "/>
+
+                <RadioGroup
+                    android:id="@+id/friday_period3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="have class"
+                        android:textSize="16dp"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="2dp"
+                        android:text="No class"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok31"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="115dp"
+                android:text="Ok"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Period 4 : "/>
+
+                <RadioGroup
+                    android:id="@+id/friday_period4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="have class"
+                        android:textSize="16dp"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="2dp"
+                        android:text="No class"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok32"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="115dp"
+                android:text="Ok"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Period 5 : "/>
+
+                <RadioGroup
+                    android:id="@+id/friday_period5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="have class"
+                        android:textSize="16dp"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="2dp"
+                        android:text="No class"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok33"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="115dp"
+                android:text="Ok"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Period 6 : "/>
+
+                <RadioGroup
+                    android:id="@+id/friday_period6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="have class"
+                        android:textSize="16dp"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="2dp"
+                        android:text="No class"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok34"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="115dp"
+                android:text="Ok"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Period 7 : "/>
+
+                <RadioGroup
+                    android:id="@+id/friday_period7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="have class"
+                        android:textSize="16dp"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="2dp"
+                        android:text="No class"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok35"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="115dp"
+                android:text="Ok"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Saturday"
+            android:textSize="22sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Period 1 : "/>
+
+                <RadioGroup
+                    android:id="@+id/saturday_period1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="have class"
+                        android:textSize="16dp"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="2dp"
+                        android:text="No class"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok36"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="115dp"
+                android:text="Ok"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Period 2 : "/>
+
+                <RadioGroup
+                    android:id="@+id/saturday_period2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="have class"
+                        android:textSize="16dp"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="2dp"
+                        android:text="No class"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok37"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="115dp"
+                android:text="Ok"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Period 3 : "/>
+
+                <RadioGroup
+                    android:id="@+id/saturday_period3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="have class"
+                        android:textSize="16dp"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="2dp"
+                        android:text="No class"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok38"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="115dp"
+                android:text="Ok"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Period 4 : "/>
+
+                <RadioGroup
+                    android:id="@+id/saturday_period4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="have class"
+                        android:textSize="16dp"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="2dp"
+                        android:text="No class"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok39"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="115dp"
+                android:text="Ok"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Period 5 : "/>
+
+                <RadioGroup
+                    android:id="@+id/saturday_period5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="have class"
+                        android:textSize="16dp"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="2dp"
+                        android:text="No class"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok40"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="115dp"
+                android:text="Ok"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Period 6 : "/>
+
+                <RadioGroup
+                    android:id="@+id/saturday_period6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="have class"
+                        android:textSize="16dp"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="2dp"
+                        android:text="No class"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok41"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="115dp"
+                android:text="Ok"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Period 7 : "/>
+
+                <RadioGroup
+                    android:id="@+id/saturday_period7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="have class"
+                        android:textSize="16dp"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="2dp"
+                        android:text="No class"
+                        android:buttonTint="#ffffff"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok42"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="115dp"
+                android:text="Ok"
+                android:background="@drawable/rounded_button"/>
+
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/browseImage"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:text="Add profile pic"
+        android:background="@drawable/rounded_button"
+        android:padding="5dp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/addSchedule"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:text="Add week schedule"
+        android:background="@drawable/rounded_button"
+        android:padding="5dp"
+        android:layout_gravity="center"/>
+
+    <!--<TextView
+        android:id="@+id/font"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif"
+        android:text="Name : "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <EditText
+        android:id="@+id/name"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/shape"
+        android:textColorHint="#ffffff"
+        android:ems="10"
+        android:hint="enter name"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.869"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.091" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Email : "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.251" />
+
+    <EditText
+        android:id="@+id/email"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/shape"
+        android:ems="10"
+        android:textColorHint="#ffffff"
+        android:hint="enter email"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.869"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.245" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Mobile no : "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.404" />
+
+    <EditText
+        android:id="@+id/number"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/shape"
+        android:ems="10"
+        android:hint="enter mobile number"
+        android:inputType="number"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.399" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Monday"/>
+
+    <Button
+        android:id="@+id/browseImage"
+        android:textSize="18dp"
+        android:background="@drawable/rounded_button"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Browse Image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.562" />
+
+    <Button
+        android:id="@+id/addSchedule"
+        android:textSize="18dp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/rounded_button"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Schedule pic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.671" /> -->
+
+</LinearLayout>
+</ScrollView>
